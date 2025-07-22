@@ -1,0 +1,27 @@
+.quiz-progress-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.quiz-progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.quiz-progress-table th,
+.quiz-progress-table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}  
+
+.quiz-progress-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.quiz-progress-table tr:nth-child(even) {
+  background-color: #fafafa;
+}

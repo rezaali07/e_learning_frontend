@@ -1,0 +1,69 @@
+.liked-courses-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.liked-courses-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.likedCoursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.likedCourseCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.likedCourseCard:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.likedCourseImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.courseContent {
+  padding: 15px;
+}
+
+.courseContent h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.courseContent p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+.courseContent button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.courseContent button:hover {
+  background-color: #c0392b;
+}

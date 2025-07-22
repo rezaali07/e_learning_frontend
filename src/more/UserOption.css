@@ -1,0 +1,38 @@
+.speedDial {
+  position: fixed;
+  bottom: 120px;
+  right: -110px;
+  z-index: 11;
+  animation: fadeIn 1s ease-in-out;
+
+}
+
+.speedDialIcon {
+  width: 55px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  
+
+}
+
+.speedDialIcon:hover {
+  transform: scale(1);
+
+}
+
+
+
+.customTooltip {
+  background-color: #376A80 !important;
+  color: #fff !important;
+  font-size: 0.9rem !important;
+  border-radius: 4px !important;
+
+}
+.speedDialIcon {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+

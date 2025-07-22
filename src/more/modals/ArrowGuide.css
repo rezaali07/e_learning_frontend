@@ -1,0 +1,20 @@
+.arrow-bounce {
+  font-size: 2rem;
+  animation: bounce 1s infinite;
+  color: #ff4757;
+}
+
+.arrow-label {
+  background-color: #ff4757;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
