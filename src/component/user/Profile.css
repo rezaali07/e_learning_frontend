@@ -1,0 +1,91 @@
+.profileContainer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax 0px;
+}
+
+img.profile__img {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 4px solid #2f6ddf;
+}
+.edit__profile{
+    color: #0a8ef7;
+    font-family: "Poppins";
+    width: 100%;
+    text-align: end;
+    padding: .5vmax 0px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    padding: 5px 0px;
+}
+.change__info {
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax 0;
+}
+a.settings {
+    color: #1c6068;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.likedCoursesSection {
+  padding: 2vmax;
+  background-color: #f9f9f9;
+}
+
+.likedCoursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5vmax;
+}
+
+.likedCourseCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.likedCourseCard:hover {
+  transform: scale(1.02);
+}
+
+.likedCourseCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.courseContent {
+  padding: 1rem;
+}
+
+.courseContent h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.courseContent button {
+  margin-top: 0.7rem;
+  padding: 0.5rem 1rem;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
