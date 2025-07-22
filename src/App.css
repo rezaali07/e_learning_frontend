@@ -1,0 +1,71 @@
+/* Default Mode (inherited styles apply) */
+
+/* Visual Aid Mode */
+body.visual-aid {
+  background-color: #fefefe;
+  color: #000;
+}
+
+body.visual-aid h1,
+body.visual-aid h2,
+body.visual-aid h3,
+body.visual-aid h4,
+body.visual-aid h5,
+body.visual-aid h6,
+body.visual-aid span,
+body.visual-aid p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #000;
+}
+
+body.visual-aid button,
+body.visual-aid input,
+body.visual-aid select {
+  font-size: 1.1em;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000;
+}
+
+body.visual-aid a {
+  color: #0044cc;
+  text-decoration: underline;
+}
+
+body.visual-aid img {
+  outline: 3px solid #000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode span,
+body.dark-mode p {
+  color: #e0e0e0;
+}
+
+body.dark-mode button,
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode a {
+  color: #80bfff;
+}
+
+body.dark-mode img {
+  opacity: 0.9;
+}
