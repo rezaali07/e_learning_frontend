@@ -1,0 +1,105 @@
+.aiquiz-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.question-block {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.question-block p {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* .options label:hover {
+  color: #007bff;
+} */
+
+input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  margin: 25px auto 0;
+  padding: 12px 28px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* button:hover:not(:disabled) {
+  background-color: #0056b3;
+} */
+
+.score {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-top: 30px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.aiquiz-container.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.loader {
+  margin-bottom: 20px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,78 @@
+/* Courses.css */
+
+/* Global Styles */
+.course-heading-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.homeHeading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Course Card Container */
+.course-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Course Card */
+.course-card {
+  /* Assuming CourseCard component has a className "course-card" */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.pagination button {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.pagination button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .course-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .course-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .course-card-container {
+    grid-template-columns: 1fr;
+  }
+  .homeHeading {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,127 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Exam Routine Page Styles */
+
+.exam-routines-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.exam-routines-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.exam-routines-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.exam-routines-list {
+  margin-top: 20px;
+}
+
+/* Exam Routine Card Styles */
+
+.exam-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.exam-meta {
+  margin-bottom: 20px;
+}
+
+.exam-meta h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.routine-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.routine-table th, .routine-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.routine-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.routine-table td {
+  background-color: #fff;
+}
+
+.routine-images {
+  margin-top: 20px;
+}
+
+.img-block {
+  margin-bottom: 20px;
+}
+
+.img-block h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.img-block img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .exam-routines-page {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .exam-card {
+    padding: 10px;
+  }
+}
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}

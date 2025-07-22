@@ -1,0 +1,244 @@
+
+
+.college-detail-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 150px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Banner section */
+.college-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+/* Floating header card */
+.college-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 130px;
+  width: calc(100% - 100px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto -190px;
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 2;
+  position: relative;
+}
+
+.college-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.college-main-info {
+  flex: 1;
+}
+
+.college-main-info h1 {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.college-main-info p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: -10px;
+}
+
+.college-actions {
+  position: absolute;
+  right: 5rem;
+  top: 95%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.btn-view-gallery,
+.btn-visit-website {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-view-gallery {
+  background-color: #f1f3f5;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-view-gallery:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-visit-website {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+}
+
+.btn-visit-website:hover {
+  background-color: #554ee6;
+}
+
+/* Section styling */
+.college-section1 {
+  margin-top: -1px;
+  background: #b8b2b23d;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.college-section {
+  margin-top: 10px;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.college-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* Highlight cards */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.highlight-grid div {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+
+.highlight-grid div:hover {
+  transform: translateY(-3px);
+}
+
+.highlight-grid strong {
+  color: #5f4dee;
+  margin-bottom: 4px;
+}
+
+.highlight-grid span {
+  color: #444;
+}
+
+/* Programs list */
+.program-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+.program-list li {
+  margin: 0.5rem 0;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .college-header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .college-logo {
+    margin: 0 0 1rem;
+  }
+
+  .college-main-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+.college-actions {
+  position: absolute;
+  right: 1rem;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+

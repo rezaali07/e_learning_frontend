@@ -1,0 +1,41 @@
+/* src/component/Admin/Dashboard.css */
+
+.adminDashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.dashboardContent {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.dashboardContent h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboardCards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  flex: 1 1 250px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}

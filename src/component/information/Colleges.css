@@ -1,0 +1,565 @@
+/* src/pages/Colleges.css */
+
+.colleges-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Categories */
+.categories-section {
+  margin-bottom: 30px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  width: 140px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background: #f9f9f9;
+  transition: border-color 0.3s;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
+}
+
+.category-card.selected {
+  border-color: #4a90e2;
+  box-shadow: 0 0 10px #4a90e2;
+}
+
+.category-image {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+
+.category-name {
+  padding: 10px 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Filter & Search */
+.filter-search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 2px;
+}
+
+.search-box {
+  flex: 1 1 350px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+ 
+  outline-color: #4a90e2;
+  transition: outline-color 0.3s;
+  
+}
+
+.search-box input:focus {
+  outline-color: #357abd;
+}
+
+.program-filters {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.program-filters h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.program-list {
+  max-height: 160px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.program-checkbox {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.95rem;
+}
+
+/* Colleges list */
+.colleges-list-section h2 {
+  margin-bottom: 20px;
+}
+
+.colleges-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.college-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.college-card:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.15);
+}
+
+.college-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background: #f5f5f5;
+}
+
+.card-content,
+.college-info {
+  padding: 15px 18px;
+}
+
+.card-content h2,
+.college-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.card-content p,
+.college-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-tags {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 8px;
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+  background-color: #0056b3;
+}
+
+/* Categories & Programs container */
+.categories-cards,
+.programs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+/* Category & Program cards */
+.category-card,
+.program-card {
+  width: 140px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  background: #f9f9f9;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.category-card.selected,
+.program-card.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 12px #007bff;
+}
+
+.category-image,
+.program-image {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+
+.category-name,
+.program-name {
+  padding: 8px 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .colleges-page {
+    padding: 0 10px;
+  }
+
+  .college-card {
+    width: 100%;
+  }
+
+  .category-card,
+  .program-card {
+    width: 45%;
+  }
+
+  .filter-search-section {
+    flex-direction: column;
+  }
+}
+
+.college-detail-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.college-detail-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.colleges-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.colleges-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  margin-bottom: 40px;
+}
+
+.search-box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.categories-section,
+.programs-section {
+  margin-bottom: 40px;
+}
+
+.categories-cards,
+.programs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-card,
+.program-card {
+  width: calc(25% - 15px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category-card.selected,
+.program-card.selected {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-image,
+.program-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.category-name,
+.program-name {
+  padding: 10px;
+  text-align: center;
+}
+
+.colleges-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.college-card {
+  width: calc(33.33% - 13.33px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.college-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-tags {
+  margin-bottom: 20px;
+}
+
+.btn-view {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-view:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  .category-card,
+  .program-card {
+    width: calc(50% - 10px);
+  }
+
+  .college-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-card,
+  .program-card {
+    width: 100%;
+  }
+
+  .college-card {
+    width: 100%;
+  }
+}
+
+
+
+.colleges-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.colleges-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.colleges-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.categories-section, .programs-section {
+  margin-top: 40px;
+}
+
+.categories-cards, .programs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card, .program-card {
+  width: calc(25% - 15px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover, .program-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-image, .program-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.category-name, .program-name {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.colleges-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.college-card {
+  width: calc(33.33% - 13.33px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.college-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-tags {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-view {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-view:hover {
+  background-color: #3e8e41;
+}
+
+.selected {
+  border: 2px solid #4CAF50;
+}
+
+.search-results {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 50%;
+  z-index: 1;
+  margin-left: -10px;
+  max-width: 700px;
+}
+
+.search-results a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.search-results a:hover {
+  background-color: #f0f0f0;
+}

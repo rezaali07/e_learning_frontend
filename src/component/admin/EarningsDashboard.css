@@ -1,0 +1,97 @@
+.earnings-dashboard {
+  display: flex;
+  height: 100%;
+}
+
+.earnings-content {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.stats-summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  background: #ffffff10;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-selling {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.top-course-card {
+  background-color: #ffffff08;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.earnings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.earnings-table th, .earnings-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.earnings-table th {
+  background-color: #f0f0f0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+  max-height: 70vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+.modal ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

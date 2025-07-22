@@ -1,0 +1,105 @@
+.course-slide-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+}
+
+.course-slide-wrapper > div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Align all cards vertically inside the slider */
+.slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.slick-slide {
+  display: flex !important;
+  height: auto !important;
+}
+
+
+/* ===================== Bottom Section ===================== */
+.course-price-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0.3rem 0;
+}
+
+.course-price {
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.course-price.original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.course-price.discounted {
+  color: #0a863b;
+  font-weight: bold;
+}
+
+.free-badge {
+  background-color: #00c853;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.course-rating {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: 16px;
+  color: #f5c518;
+  margin: 0.3rem 0;
+}
+
+.course-author {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===================== CTA Button ===================== */
+.start-learning-btn {
+  background-color: #0bd64f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px auto 0 auto;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s ease;
+  width: 80%;
+}
+
+.start-learning-btn:hover {
+  background-color: #216ea4;
+  transform: translateY(-2px);
+}
+
+/* ===================== Responsive Fixes ===================== */
+@media screen and (max-width: 480px) {
+  .course-card {
+    max-width: 100%;
+    height: 460px;
+  }
+}

@@ -1,0 +1,95 @@
+.course-add {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.course-add-panel {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.course-add-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.course-add-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-add-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+  animation: none !important;
+  border-radius: 10%; 
+  height: 20px;
+  
+}
+
+.course-add-input,
+.course-add-select,
+.course-add-textarea {
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.course-add-input:focus,
+.course-add-select:focus,
+.course-add-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.course-add-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.course-add-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.course-add-button:hover {
+  background-color: #0056b3;
+}
+
+.course-add-input[type="file"] {
+  padding: 0.4rem;
+  background-color: #fdfdfd;
+}
+
+.course-add-select option {
+  padding: 0.4rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .course-add-panel {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .course-add-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,267 @@
+:root {
+  --bg: #ffffff;
+  --text: #333;
+  --card-bg: #ffffff;
+  --border-color: #ccc;
+}
+
+body.dark-mode {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+  --card-bg: #2c2c2c;
+  --border-color: #444;
+}
+
+body.visual-aid {
+  --bg: #ffffff;
+  --text: #00698f;
+  --card-bg: #ffffff;
+  --border-color: #99cc99;
+}
+
+.lesson-view-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 100px;
+}
+
+.lesson-video {
+  width: 100%;
+  max-width: 600px;
+  max-height: 700px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Sidebar */
+.lesson-sidebar {
+  width: 250px;
+  padding: 25px;
+  background-color: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+.lesson-sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.lesson-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-sidebar li {
+  padding: 12px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lesson-sidebar li:hover,
+.lesson-sidebar .active-lesson {
+  background-color: #c0f2be;
+  font-weight: 600;
+  color: #006400;
+}
+
+/* Main */
+.lesson-main {
+  flex: 1;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lesson-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.quiz-button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+  background-color: #256729;
+}
+
+/* Lesson Box */
+.lesson-content-box {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 30px 0;
+}
+
+.lesson-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 25px;
+  border-radius: 10px;
+}
+
+.lesson-description ul {
+  margin-left: 20px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* Navigation Buttons */
+.lesson-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.lesson-navigation button {
+  background-color: #4daa46;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lesson-navigation button:hover:not(:disabled) {
+  background-color: #3e923a;
+}
+
+.lesson-navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lesson-view-container {
+    flex-direction: column;
+  }
+
+  .lesson-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .lesson-main {
+    padding: 20px;
+  }
+
+  .lesson-navigation {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.completed-lesson {
+  background-color: #e0f5e0;
+  color: #1a6b1a;
+  font-weight: bold;
+}
+
+.mark-read-btn.completed {
+  background-color: #c1eac5;
+  color: #165a1f;
+  border: 1px solid #88cc99;
+}
+
+/* Container for the quiz button and dropdown */
+.quiz-button-wrapper {
+  position: relative;
+  display: inline-block;
+  font-family: inherit;
+  user-select: none;
+}
+
+/* Quiz button style */
+.quiz-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+  background-color: #357abd;
+}
+
+/* Dropdown container */
+.quiz-button-wrapper > div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+/* Dropdown buttons */
+.quiz-button-wrapper > div button {
+  width: 100%;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 0;
+}
+
+.quiz-button-wrapper > div button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Optional: active lesson highlight (if needed) */
+.active-lesson {
+  font-weight: bold;
+  background-color: #e6f0ff;
+  cursor: pointer;
+}
+
+.completed-lesson {
+  color: #2a9d8f;
+}
+
+.completed-check {
+  margin-left: 6px;
+  color: #2a9d8f;
+  font-weight: bold;
+}
