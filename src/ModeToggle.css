@@ -1,0 +1,41 @@
+/* Default mode */
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Visual Aid mode */
+body.visual-aid {
+  background-color: #ffffcc;
+  color: #00698f;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Style the select dropdown */
+select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Dark mode select styles */
+body.dark-mode select {
+  background-color: #444;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Visual aid select styles */
+body.visual-aid select {
+  background-color: #ccffcc;
+  color: #00698f;
+  border-color: #99ff99;
+}
